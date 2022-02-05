@@ -24,6 +24,7 @@ const ThemeSwitcher = () => {
 
                 return (
                   <Button
+                    key={theme.name}
                     variant={currentTheme.bs.variant}
                     disabled={currentTheme === theme}
                     onClick={() => updateTheme(theme)}
