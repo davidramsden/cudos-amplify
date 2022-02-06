@@ -1,5 +1,5 @@
-import StatusBar from "./Core/StatusBar";
-import Theme from "./Core/Theme";
+import StatusBar from "@core/StatusBar";
+import Theme from "@core/Theme";
 
 const App = () => {
   return (

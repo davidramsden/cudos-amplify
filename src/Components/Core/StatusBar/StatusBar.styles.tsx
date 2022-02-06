@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import BaseLogo from "../Logo";
+import BaseLogo from "@core/Logo";
 
 export const Logo = styled(BaseLogo)`
   width: 150px;

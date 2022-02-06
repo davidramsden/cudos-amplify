@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import ThemeUpdateContext from "../../../Contexts/ThemeUpdateContext";
-import GlobalTheme from "../../../Styles/Global";
-import Themes from "../../../Styles/Themes";
+import ThemeUpdateContext from "@contexts/ThemeUpdateContext";
+import GlobalTheme from "./GlobalTheme";
+import Themes from "./Themes";
 
-const Theme = ({ children }) => {
+const Theme = ({ children }: { children: JSX.Element }) => {
   const [currentTheme, setCurrentTheme] = useState(Themes.dark);
 
   return (
