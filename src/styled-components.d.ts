@@ -4,7 +4,7 @@ import "styled-components";
 declare module "styled-components" {
   export interface DefaultTheme {
     name: string;
-    icon: IconType;
+    icon: string;
     bs: {
       bg: string;
       variant: string;

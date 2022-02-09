@@ -6,8 +6,11 @@
       "@components/*": ["src/Components/*"],
       "@contexts/*": ["src/Contexts/*"],
       "@core/*": ["src/Components/Core/*"],
+      "@hooks/*": ["src/Hooks/*"],
       "@images/*": ["src/Assets/Images/*"],
-      "@styles/*": ["src/Styles/*"]
+      "@styles/*": ["src/Styles/*"],
+      "@themes/*": ["src/Themes/*"],
+      "@utils/*": ["src/Utils/*"]
     }
   }
 }

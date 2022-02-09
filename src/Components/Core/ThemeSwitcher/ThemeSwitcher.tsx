@@ -2,17 +2,16 @@ import { useContext } from "react";
 import { Button, ButtonGroup, OverlayTrigger } from "react-bootstrap";
 import { ThemeContext } from "styled-components";
 import ThemeUpdateContext from "@contexts/ThemeUpdateContext";
-import Themes from "@core/Theme/Themes";
+import Themes from "@themes/index";
 import {
   ThemeSwitcherPopover,
   ThemeSwitcherPopoverBody,
 } from "./ThemeSwitcher.styles";
+import Icon from "../Icon";
 
 const ThemeSwitcher = () => {
   const currentTheme = useContext(ThemeContext);
   const updateTheme = useContext(ThemeUpdateContext);
-
-  const CurrentThemeIcon = currentTheme.icon;
 
   return (
     <OverlayTrigger
@@ -23,8 +22,6 @@ const ThemeSwitcher = () => {
           <ThemeSwitcherPopoverBody>
             <ButtonGroup vertical>
               {Object.values(Themes).map((theme) => {
-                const ThemeIcon = theme.icon;
-
                 return (
                   <Button
                     key={theme.name}
@@ -32,7 +29,7 @@ const ThemeSwitcher = () => {
                     disabled={currentTheme === theme}
                     onClick={() => updateTheme(theme)}
                   >
-                    <ThemeIcon /> {theme.name}
+                    <Icon name={theme.icon} /> {theme.name}
                   </Button>
                 );
               })}
@@ -42,7 +39,7 @@ const ThemeSwitcher = () => {
       }
     >
       <Button variant={currentTheme.bs.variant}>
-        <CurrentThemeIcon />
+        <Icon name={currentTheme.icon} />
       </Button>
     </OverlayTrigger>
   );
