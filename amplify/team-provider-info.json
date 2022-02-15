@@ -1,15 +1,20 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-cudos-dev-104140-authRole",
-      "UnauthRoleArn": "arn:aws:iam::095514868814:role/amplify-cudos-dev-104140-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::095514868814:role/amplify-cudos-dev-104140-authRole",
+      "AuthRoleName": "amplify-cudos-dev-181751-authRole",
+      "UnauthRoleArn": "arn:aws:iam::095514868814:role/amplify-cudos-dev-181751-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::095514868814:role/amplify-cudos-dev-181751-authRole",
       "Region": "eu-west-2",
-      "DeploymentBucketName": "amplify-cudos-dev-104140-deployment",
-      "UnauthRoleName": "amplify-cudos-dev-104140-unauthRole",
-      "StackName": "amplify-cudos-dev-104140",
-      "StackId": "arn:aws:cloudformation:eu-west-2:095514868814:stack/amplify-cudos-dev-104140/e06113a0-84dd-11ec-b811-0ae4b984ffc0",
-      "AmplifyAppId": "d3qex0x30zamv5"
+      "DeploymentBucketName": "amplify-cudos-dev-181751-deployment",
+      "UnauthRoleName": "amplify-cudos-dev-181751-unauthRole",
+      "StackName": "amplify-cudos-dev-181751",
+      "StackId": "arn:aws:cloudformation:eu-west-2:095514868814:stack/amplify-cudos-dev-181751/1885bf20-8c30-11ec-b194-0637bf3fd65a",
+      "AmplifyAppId": "d3oi6ha4p6wss8"
+    },
+    "categories": {
+      "auth": {
+        "cudos1b56b40d": {}
+      }
     }
   }
 }
